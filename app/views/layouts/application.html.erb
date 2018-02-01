@@ -7,6 +7,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <header>
+      <%= render "layouts/header" %>
+    </header>
+    <div class="container">
     <%= yield %>
+    </div>
+    <footer>
+      <%= render "layouts/footer" %>
+    </footer>
   </body>
 </html>

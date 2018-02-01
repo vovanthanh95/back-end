@@ -2,5 +2,8 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get 'static_pages/help'
   get 'static_pages/about'
+  get 'static_pages/login'
+  get 'static_pages/contact'
+  get 'static_pages/register'
   root 'static_pages#home'
  end
