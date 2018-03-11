@@ -1,0 +1,9 @@
+<%= form_for book do |form| %>
+  <div><%= form.label :title, value: "Title" %></div>
+  <div><%= form.text_field :title %></div>
+  <div><%= form.label :content, value: "content" %></div>
+  <div><%= form.text_area :content %></div>
+  <div><%= form.label :author, value: "author" %></div>
+  <div><%= form.text_field :author %></div>
+  <div><%= form.submit%></div>
+<% end %>

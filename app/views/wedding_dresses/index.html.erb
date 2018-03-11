@@ -1,0 +1,26 @@
+
+<%= link_to "new", new_wedding_dress_path %>
+
+<table>
+  <thead>
+    <td>Name</td>
+    <td>Size</td>
+    <td>Color</td>
+    <td>Price</td>
+    <td>Action</td>
+  </thead>
+
+  <tbody>
+    <% @weddingdress.each do |weddingdress| %>
+    <tr>
+      <td><%= weddingdress.name %></td>
+      <td><%= weddingdress.size %></td>
+      <td><%= weddingdress.color %></td>
+      <td><%= weddingdress.price %></td>
+      <td><%= link_to "show", wedding_dress_path(weddingdress) %></td>
+      <td><%= link_to "delete", wedding_dress_path(weddingdress), method: :delete %></td>
+      <td><%= link_to "edit", edit_wedding_dress_path(weddingdress) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
